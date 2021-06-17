@@ -2,9 +2,16 @@
 
 Before executing these commands, log in to your openshift cluster from the console using *oc login* or a token from the Openshift UI
 
+## Deploy Red Hat SSO
+1. Install Red Hat SSO on OpenShift using the operator or template
+2. Import the demo realm using the realm-export.json located at **ba-process-server-openshift/keycloak/**
+
 ## Deploy Spring Boot kieserver
 
-1. Under **business-application-main/**business-application-service**** run: 
+1. Configure the following Keycloak attributes in application.properties
+   - keycloak.auth-server-url
+   - keycloak.credentials.secret
+2. Under **business-application-main/**business-application-service**** run: 
 > mvn clean install
 
 > ./launch.sh clean install -Popenshift,h2
