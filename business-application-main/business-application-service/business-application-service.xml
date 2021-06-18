@@ -1,8 +1,46 @@
 <kie-server-state>
   <controllers>
-    <string>http://insecure-cibc-pam-rhpamcentrmon-cibc-poc.apps.cluster-7e53.7e53.sandbox1541.opentlc.com/rest/controller</string>
+    <string>ws://localhost:8080/business-central/websocket/controller</string>
   </controllers>
-  <configuration/>
+  <configuration>
+    <configItems>
+      <config-item>
+        <name>org.kie.server.location</name>
+        <value>http://localhost:8090/rest/server</value>
+        <type>java.lang.String</type>
+      </config-item>
+      <config-item>
+        <name>org.kie.server.controller.pwd</name>
+        <value>adminPassword</value>
+        <type>java.lang.String</type>
+      </config-item>
+      <config-item>
+        <name>org.kie.server.controller.user</name>
+        <value>adminUser</value>
+        <type>java.lang.String</type>
+      </config-item>
+      <config-item>
+        <name>org.kie.server.id</name>
+        <value>business-application-service</value>
+        <type>java.lang.String</type>
+      </config-item>
+      <config-item>
+        <name>org.kie.server.controller</name>
+        <value>ws://localhost:8080/business-central/websocket/controller</value>
+        <type>java.lang.String</type>
+      </config-item>
+      <config-item>
+        <name>org.kie.server.startup.strategy</name>
+        <value>LocalContainersStartupStrategy</value>
+        <type>java.lang.String</type>
+      </config-item>
+      <config-item>
+        <name>org.kie.server.mode</name>
+        <value>production</value>
+        <type>java.lang.String</type>
+      </config-item>
+    </configItems>
+  </configuration>
   <containers>
     <container>
       <containerId>business-application-kjar</containerId>

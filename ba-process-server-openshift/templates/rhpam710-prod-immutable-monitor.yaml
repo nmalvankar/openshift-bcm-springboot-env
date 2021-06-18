@@ -742,6 +742,8 @@ objects:
             value: "${AUTH_ROLE_MAPPER_ROLES_PROPERTIES}"
           - name: AUTH_ROLE_MAPPER_REPLACE_ROLE
             value: "${AUTH_ROLE_MAPPER_REPLACE_ROLE}"
+          - name: ORG_APPFORMER_SIMPLIFIED_MONITORING_ENABLED
+            value: "true"
 ##          - name: JAVA_OPTS_APPEND
 ##            value: "-Dorg.kie.server.controller.templatefile.watcher.enabled=true -Dorg.kie.server.controller.templatefile=/opt/kie/data"
         volumes:
