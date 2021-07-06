@@ -261,7 +261,7 @@
                     </runCmds>
                     <env>
                       <M2_HOME>/opt/jboss/.m2</M2_HOME>
-                      <JAVA_OPTIONS>-Dorg.kie.server.mode=production -Dorg.kie.server.startup.strategy=LocalContainersStartupStrategy -Dorg.kie.server.controller.user=adminUser -Dorg.kie.server.controller.pwd=adminPassword -Dorg.kie.server.location=http://business-application-service:8080/rest/server -Dorg.kie.server.id=business-application-service -Dorg.kie.server.controller=ws://cibc-pam-rhpamcentrmon:8080/websocket/controller -Dkie.maven.settings.custom=/opt/jboss/.m2/settings.xml -Dorg.guvnor.m2repo.dir=/opt/jboss/.m2/repository
+                      <JAVA_OPTIONS>-Dorg.kie.server.mode=production -Dorg.kie.server.startup.strategy=LocalContainersStartupStrategy -Dorg.kie.server.controller.user=adminUser -Dorg.kie.server.controller.pwd=adminPassword -Dorg.kie.server.location=http://business-application-service:8090/rest/server -Dorg.kie.server.id=business-application-service -Dorg.kie.server.controller=ws://cibc-pam-rhpamcentrmon:8080/websocket/controller -Dkie.maven.settings.custom=/opt/jboss/.m2/settings.xml -Dorg.guvnor.m2repo.dir=/opt/jboss/.m2/repository
                       </JAVA_OPTIONS>
                     </env>
                     <ports>
