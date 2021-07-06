@@ -1,7 +1,5 @@
 <kie-server-state>
-  <controllers>
-    <string>http://insecure-cibc-pam-rhpamcentrmon-cibc-poc.apps.cluster-7e53.7e53.sandbox1541.opentlc.com/rest/controller</string>
-  </controllers>
+  <controllers/>
   <configuration/>
   <containers>
     <container>
